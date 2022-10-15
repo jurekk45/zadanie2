@@ -1,0 +1,49 @@
+
+public class Main {
+
+    public static void main(String []args) {
+
+        Car littleCar = new Car();
+        Car BigBlueCar = new Car("Blue");
+        Car newExpensieveCar = new Car(123);
+        
+        littleCar.CarData();
+            BigBlueCar.CarData();
+            newExpensieveCar.CarData();
+
+    }
+}
+
+
+
+class Car {
+   
+   static String color="unknow";
+  static  int price=0;
+
+
+
+    Car() {
+        System.out.println("New Car");
+
+    }
+    Car(String co) {
+        color=co;
+        System.out.println("New"+" "+ color+" " +"Car");
+    }
+    Car(int pr) {
+        price=pr;
+        System.out.println("Your car is expensieve, It cost: "+ price );
+      
+
+
+    }
+    
+    static void CarData()
+    {
+        System.out.println("Your car informations: car color is "+color+",and its cost "+price );
+    }
+    
+
+
+}
